@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppJogoDaVelha.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#00FFFF" Offset="0.3" />
+            <GradientStop Color="#8A2BE2" Offset="1.1" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid ColumnDefinitions="*, *, *"
+          RowDefinitions="*, *, *, *"
+          VerticalOptions="Center"
+          Padding="10">
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                 FontSize="60" HorizontalTextAlignment="Center"
+                 Text="Jogo Da Velha" />
+        
+        <Button CornerRadius="30" x:Name="btn10" Grid.Row="1" Grid.Column="0" Text="" Clicked="bnt_Clicked" />
+        <Button CornerRadius="30" x:Name="btn20" Grid.Row="2" Grid.Column="0" Text="" Clicked="bnt_Clicked"/>
+        <Button CornerRadius="30" x:Name="btn30" Grid.Row="3" Grid.Column="0" Text="" Clicked="bnt_Clicked" />
+
+        <Button CornerRadius="30" x:Name="btn11" Grid.Row="1" Grid.Column="1" Text="" Clicked="bnt_Clicked"/>
+        <Button CornerRadius="30" x:Name="btn21" Grid.Row="2" Grid.Column="1" Text="" Clicked="bnt_Clicked"/>
+        <Button CornerRadius="30" x:Name="btn31" Grid.Row="3" Grid.Column="1" Text="" Clicked="bnt_Clicked"/>
+
+        <Button CornerRadius="30" x:Name="btn12" Grid.Row="1" Grid.Column="2" Text="" Clicked="bnt_Clicked" />
+        <Button CornerRadius="30" x:Name="btn22" Grid.Row="2" Grid.Column="2" Text="" Clicked="bnt_Clicked"/>
+        <Button CornerRadius="30" x:Name="btn32" Grid.Row="3" Grid.Column="2" Text="" Clicked="bnt_Clicked"/>
+    </Grid>
+</ContentPage>
